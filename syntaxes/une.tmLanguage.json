@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Une",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#comments" },
+    { "include": "#constvars" },
+    { "include": "#functions" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.flow.une",
+          "match": "\\b(if|elif|else|while|for|from|till|return|break|continue|def)\\b"
+        },
+        {
+          "name": "keyword.operator.ternary.une",
+          "match": "(\\?|:)"
+        },
+        {
+          "name": "keyword.operator.arithmetic.une",
+          "match": "(\\+|-|\\*|\\/|\\/\\/|%|\\*\\*)"
+        },
+        {
+          "name": "keyword.operator.assignment.une",
+          "match": "(=|global)"
+        },
+        {
+          "name": "keyword.operator.comparison.une",
+          "match": "(>=|<=|>|<|==|!=)"
+        },
+        {
+          "name": "keyword.operator.logical.une",
+          "match": "(&&|\\|\\||!)"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.une",
+      "begin": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.une",
+          "match": "\\\\(n|\\\\|\n|\")"
+        }
+      ],
+      "end": "\""
+    },
+    "numbers": {
+      "name": "constant.numeric.une",
+      "match": "(?<!\\w)\\d+(?:\\.\\d+)?"
+    },
+    "comments": {
+      "name": "comment.line.number-sign.une",
+      "begin": "(\\#)",
+      "end": "($)"
+    },
+    "constvars": {
+      "name": "variable.other.constant.une",
+      "match": "\\b([A-Z_][A-Z0-9_]*)\\b"
+    },
+    "functions": {
+      "match": "([a-zA-Z_]\\w*)\\(",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.une"
+        }
+      }
+    }
+  },
+  "scopeName": "source.une"
+}

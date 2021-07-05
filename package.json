@@ -1,0 +1,43 @@
+{
+  "name": "une",
+  "displayName": "Une",
+  "version": "0.0.1",
+  "publisher": "chnet",
+  "description": "Language support for the Une Programming Language.",
+  "author": {
+    "name": "chnet",
+    "email": "thechnet@gmail.com"
+  },
+  "categories": ["Programming Languages"],
+  "icon": "images/icon-256x.png",
+  "galleryBanner": {
+    "color": "#342E66",
+    "theme": "light"
+  },
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "bugs": {
+    "url": "https://github.com/thechnet/une-vscode/issues",
+    "email": "thechnet@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thechnet/une-vscode.git"
+  },
+  "homepage": "https://github.com/thechnet/une",
+  "preview": true,
+  "contributes": {
+    "languages": [{
+      "id": "une",
+      "aliases": ["Une", "une"],
+      "extensions": [".une"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "une",
+      "scopeName": "source.une",
+      "path": "./syntaxes/une.tmLanguage.json"
+    }]
+  }
+}
