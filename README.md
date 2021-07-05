@@ -2,7 +2,9 @@
 
 # **Une Programming Language**
 
-Adds language support for Une.
+Adds Visual Studio Code Language Support for [Une](https://github.com/thechnet/une).
+
+If you're viewing this from GitHub, you can install the extension [here](https://marketplace.visualstudio.com/items?itemName=chnet.une).
 
 ## Features
 

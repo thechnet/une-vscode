@@ -12,7 +12,7 @@
   "icon": "images/icon-256x.png",
   "galleryBanner": {
     "color": "#342E66",
-    "theme": "light"
+    "theme": "dark"
   },
   "engines": {
     "vscode": "^1.57.0"
