@@ -13,8 +13,12 @@
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.flow.une",
-          "match": "\\b(if|elif|else|while|for|from|till|return|break|continue|def)\\b"
+          "name": "keyword.control.une",
+          "match": "\\b(if|elif|else|while|for|return|break|continue)\\b"
+        },
+        {
+          "name": "keyword.other.une",
+          "match": "\\b(from|till|def|global)\\b"
         },
         {
           "name": "keyword.operator.ternary.une",
@@ -22,11 +26,7 @@
         },
         {
           "name": "keyword.operator.arithmetic.une",
-          "match": "(\\+|-|\\*|\\/|\\/\\/|%|\\*\\*)"
-        },
-        {
-          "name": "keyword.operator.assignment.une",
-          "match": "(=|global)"
+          "match": "(\\+|-|\\*\\*|\\*|\\/\\/|\\/|%)"
         },
         {
           "name": "keyword.operator.comparison.une",
@@ -35,6 +35,10 @@
         {
           "name": "keyword.operator.logical.une",
           "match": "(&&|\\|\\||!)"
+        },
+        {
+          "name": "keyword.operator.assignment.une",
+          "match": "(=)"
         }
       ]
     },
@@ -51,7 +55,7 @@
     },
     "numbers": {
       "name": "constant.numeric.une",
-      "match": "(?<!\\w)\\d+(?:\\.\\d+)?"
+      "match": "\\b(?<!\\w)\\d+(?:\\.\\d+)?\\b"
     },
     "comments": {
       "name": "comment.line.number-sign.une",
@@ -60,10 +64,10 @@
     },
     "constvars": {
       "name": "variable.other.constant.une",
-      "match": "\\b((?:_+[0-9]*)?[A-Z][A-Z0-9_]*)\\b"
+      "match": "\\b((?:_[0-9_]*)?[A-Z][A-Z0-9_]*)\\b"
     },
     "functions": {
-      "match": "([a-zA-Z_]\\w*)\\(",
+      "match": "\\b([a-zA-Z_]\\w*)\\(",
       "captures": {
         "1": {
           "name": "entity.name.function.une"
