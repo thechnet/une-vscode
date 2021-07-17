@@ -7,7 +7,8 @@
     { "include": "#numbers" },
     { "include": "#comments" },
     { "include": "#constvars" },
-    { "include": "#functions" }
+    { "include": "#functions" },
+    { "include": "#variables" }
   ],
   "repository": {
     "keywords": {
@@ -67,12 +68,16 @@
       "match": "\\b((?:_[0-9_]*)?[A-Z][A-Z0-9_]*)\\b"
     },
     "functions": {
-      "match": "\\b([a-zA-Z_]\\w*)\\(",
+      "match": "\\b([A-Za-z_]\\w*)\\(",
       "captures": {
         "1": {
           "name": "entity.name.function.une"
         }
       }
+    },
+    "variables": {
+      "name": "variable.other.readwrite.une",
+      "match": "\\b([A-Za-z_]\\w*)\\b"
     }
   },
   "scopeName": "source.une"

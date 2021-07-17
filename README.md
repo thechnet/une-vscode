@@ -1,7 +1,5 @@
 # Une Programming Language
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/thechnet/une-vscode)
-
 > If you're viewing this from GitHub, you can install this extension [here](https://marketplace.visualstudio.com/items?itemName=chnet.une).
 
 [Visual Studio Code](https://code.visualstudio.com/) Language Support for [Une](https://github.com/thechnet/une).
@@ -14,6 +12,11 @@
 ---
 
 ## Changelog
+
+### [0.2.0] - 2021-07-17
+
+### Added
+- Read/write variable marking.
 
 ### [0.1.0] - 2021-07-08
 
