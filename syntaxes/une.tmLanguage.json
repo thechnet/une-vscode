@@ -19,7 +19,7 @@
         },
         {
           "name": "keyword.other.une",
-          "match": "\\b(from|till|def|global)\\b"
+          "match": "\\b(from|till|global|function)\\b"
         },
         {
           "name": "keyword.operator.ternary.une",
