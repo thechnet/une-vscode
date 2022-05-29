@@ -15,7 +15,7 @@
       "patterns": [
         {
           "name": "keyword.control.une",
-          "match": "\\b(if|elif|else|while|for|return|break|continue)\\b"
+          "match": "\\b(if|elif|else|while|for|return|exit|break|continue)\\b"
         },
         {
           "name": "keyword.other.une",
