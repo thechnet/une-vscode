@@ -1,3 +1,8 @@
+### 0.4.0 - 2022-05-29
+
+### Added
+- Support for `exit` statement.
+
 ### 0.3.0 - 2021-08-13
 
 #### Changed
