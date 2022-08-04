@@ -1,7 +1,7 @@
 {
   "name": "une",
   "displayName": "Une",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "publisher": "chnet",
   "description": "Language support for the Une Programming Language.",
   "author": {
@@ -40,7 +40,11 @@
         "extensions": [
           ".une"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./images/logo-64x-dark.png",
+          "dark": "./images/logo-64x-light.png"
+        }
       }
     ],
     "grammars": [

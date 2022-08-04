@@ -1,6 +1,12 @@
+### 0.5.0 - 2022-08-04
+
+#### Added
+- Support for editor folding. Use `#region` to mark the beginning and `#endregion` to mark the end of a folding region.
+- `.une` file icons.
+
 ### 0.4.0 - 2022-05-29
 
-### Added
+#### Added
 - Support for `exit` statement.
 
 ### 0.3.0 - 2021-08-13
