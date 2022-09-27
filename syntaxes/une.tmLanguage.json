@@ -49,7 +49,7 @@
       "patterns": [
         {
           "name": "constant.character.escape.une",
-          "match": "\\\\(n|\\\\|\n|\")"
+          "match": "\\\\(n|e|a|\\\\|\n|\")"
         }
       ],
       "end": "\""

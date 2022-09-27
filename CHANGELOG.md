@@ -1,3 +1,8 @@
+### 0.6.0 - 2022-09-27
+
+### Added
+- Support for `\e` and `\a` escape sequences.
+
 ### 0.5.0 - 2022-08-04
 
 #### Added
