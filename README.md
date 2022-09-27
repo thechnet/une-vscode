@@ -6,5 +6,7 @@ This [Visual Studio Code](https://code.visualstudio.com/) extension adds languag
 
 ## Features
 
-- Syntax highlighting
-- Line comment shortcut
+- Syntax highlighting.
+- Comment keyboard shortcut support.
+- `#region` support.
+- Custom `.une` file icons.
