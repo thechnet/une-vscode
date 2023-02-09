@@ -1,3 +1,8 @@
+### 0.8.0 - 2023-02-09
+
+### Added
+- Support for `in` keyword.
+
 ### 0.7.0 - 2023-02-09
 
 ### Added
