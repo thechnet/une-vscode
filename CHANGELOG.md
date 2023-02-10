@@ -1,3 +1,8 @@
+### 0.10.0 - 2023-02-10
+
+### Added
+- Support for `True`, `False`, and `Void` keywords.
+
 ### 0.9.0 - 2023-02-10
 
 ### Added
