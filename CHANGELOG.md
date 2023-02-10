@@ -1,3 +1,12 @@
+### 0.9.0 - 2023-02-10
+
+### Added
+- Support for nullish operator (`??`).
+- Support for expressions embedded in strings.
+
+### Changed
+- `from`, `till`, and `in` are no longer grouped as operators but instead as regular keywords.
+
 ### 0.8.0 - 2023-02-09
 
 ### Added

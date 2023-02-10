@@ -1,84 +1,102 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "Une",
-  "patterns": [
-    { "include": "#keywords" },
-    { "include": "#strings" },
-    { "include": "#numbers" },
-    { "include": "#comments" },
-    { "include": "#constvars" },
-    { "include": "#functions" },
-    { "include": "#variables" }
-  ],
-  "repository": {
-    "keywords": {
-      "patterns": [
-        {
-          "name": "keyword.control.une",
-          "match": "\\b(if|elif|else|while|for|return|exit|break|continue)\\b"
-        },
-        {
-          "name": "keyword.other.une",
-          "match": "\\b(from|till|in|global|function|cover)\\b"
-        },
-        {
-          "name": "keyword.operator.ternary.une",
-          "match": "(\\?|:)"
-        },
-        {
-          "name": "keyword.operator.arithmetic.une",
-          "match": "(\\+|-|\\*\\*|\\*|\\/\\/|\\/|%)"
-        },
-        {
-          "name": "keyword.operator.comparison.une",
-          "match": "(>=|<=|>|<|==|!=)"
-        },
-        {
-          "name": "keyword.operator.logical.une",
-          "match": "(&&|\\|\\||!)"
-        },
-        {
-          "name": "keyword.operator.assignment.une",
-          "match": "(=)"
-        }
-      ]
-    },
-    "strings": {
-      "name": "string.quoted.double.une",
-      "begin": "\"",
-      "patterns": [
-        {
-          "name": "constant.character.escape.une",
-          "match": "\\\\(n|e|a|\\\\|\n|\")"
-        }
-      ],
-      "end": "\""
-    },
-    "numbers": {
-      "name": "constant.numeric.une",
-      "match": "\\b(?<!\\w)\\d+(?:\\.\\d+)?\\b"
-    },
-    "comments": {
-      "name": "comment.line.number-sign.une",
-      "begin": "(\\#)",
-      "end": "($)"
-    },
-    "constvars": {
-      "name": "variable.other.constant.une",
-      "match": "\\b((?:_[0-9_]*)?[A-Z][A-Z0-9_]*)\\b"
-    },
-    "functions": {
-      "match": "\\b([A-Za-z_]\\w*)\\s*\\(",
-      "captures": {
-        "1": {
-          "name": "entity.name.function.une"
-        }
-      }
-    },
-    "variables": {
-      "name": "variable.other.readwrite.une",
-      "match": "\\b([A-Za-z_]\\w*)\\b"
-    }
-  },
-  "scopeName": "source.une"
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Une",
+	"patterns": [
+		{ "include": "#all" }
+	],
+	"repository": {
+		"all": {
+			"patterns": [
+				{ "include": "#keywords" },
+				{ "include": "#strings" },
+				{ "include": "#numbers" },
+				{ "include": "#comments" },
+				{ "include": "#constant_variables" },
+				{ "include": "#functions" },
+				{ "include": "#variables" }
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.une",
+					"match": "\\b(if|elif|else|while|for|from|till|in|return|exit|break|continue)\\b"
+				},
+				{
+					"name": "storage.modifier",
+					"match": "\\b(global)\\b"
+				},
+				{
+					"name": "keyword.other.une",
+					"match": "\\b(function|cover)\\b"
+				},
+				{
+					"name": "keyword.operator.arithmetic.une",
+					"match": "(\\+|-|\\*\\*|\\*|\\/\\/|\\/|%)"
+				},
+				{
+					"name": "keyword.operator.comparison.une",
+					"match": "(>=|<=|>|<|==|!=)"
+				},
+				{
+					"name": "keyword.operator.logical.une",
+					"match": "(&&|\\|\\||\\?\\?|!)"
+				},
+				{
+					"name": "keyword.operator.ternary.une",
+					"match": "(\\?|:)"
+				},
+				{
+					"name": "keyword.operator.assignment.une",
+					"match": "(=)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.une",
+			"begin": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.une",
+					"match": "\\\\(n|e|a|\\\\|\n|\"|\\{|\\})"
+				},
+				{ "include": "#string_expression" }
+			],
+			"end": "\""
+		},
+		"numbers": {
+			"name": "constant.numeric.une",
+			"match": "\\b(?<!\\w)\\d+(?:\\.\\d+)?\\b"
+		},
+		"comments": {
+			"name": "comment.line.number-sign.une",
+			"begin": "(\\#)",
+			"end": "($)"
+		},
+		"constant_variables": {
+			"name": "variable.other.constant.une",
+			"match": "\\b((?:_[0-9_]*)?[A-Z][A-Z0-9_]*)\\b"
+		},
+		"functions": {
+			"match": "\\b([A-Za-z_]\\w*)\\s*\\(",
+			"captures": {
+				"1": {
+					"name": "entity.name.function.une"
+				}
+			}
+		},
+		"variables": {
+			"name": "variable.other.readwrite.une",
+			"match": "\\b([A-Za-z_]\\w*)\\b"
+		},
+		"string_expression": {
+			"name": "constant.character.format.placeholder.other.une",
+			"begin": "\\{",
+			"patterns": [
+				{ "include": "#all" }
+			],
+			"end": "\\}"
+		}
+	},
+	"scopeName": "source.une"
 }
