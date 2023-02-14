@@ -49,6 +49,10 @@
 				{
 					"name": "keyword.operator.assignment.une",
 					"match": "(=)"
+				},
+				{
+					"name": "keyword.operator",
+					"match": "(\\.)"
 				}
 			]
 		},

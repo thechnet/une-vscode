@@ -1,3 +1,8 @@
+### 0.11.1 - 2023-02-15
+
+### Fixed
+- Wrong color for dot (`.`) operator.
+
 ### 0.11.0 - 2023-02-14
 
 ### Added
