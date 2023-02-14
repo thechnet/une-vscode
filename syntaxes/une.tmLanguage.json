@@ -28,7 +28,7 @@
 				},
 				{
 					"name": "keyword.other.une",
-					"match": "\\b(function|cover|True|False|Void)\\b"
+					"match": "\\b(function|cover|True|False|Void|this)\\b"
 				},
 				{
 					"name": "keyword.operator.arithmetic.une",
