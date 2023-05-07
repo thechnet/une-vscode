@@ -3,6 +3,9 @@
 ### Added
 - Support for assignment operations.
 
+### Fixed
+- Parentheses in embedded expressions are colored incorrectly.
+
 ### 0.11.1 - 2023-02-15
 
 ### Fixed

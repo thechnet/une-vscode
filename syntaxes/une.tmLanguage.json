@@ -57,16 +57,37 @@
 			]
 		},
 		"strings": {
-			"name": "string.quoted.double.une",
 			"begin": "\"",
+			"beginCaptures": {
+				"0": {
+					"name": "string.quoted.double.une"
+				}
+			},
+			"end": "\"",
+			"endCaptures": {
+				"0": {
+					"name": "string.quoted.double.une"
+				}
+			},
 			"patterns": [
 				{
-					"name": "constant.character.escape.une",
+					"name": "string.quoted.double.une constant.character.escape.une",
 					"match": "\\\\(n|e|a|\\\\|\n|\"|\\{|\\})"
 				},
-				{ "include": "#string_expression" }
-			],
-			"end": "\""
+				{
+					"begin": "\\{",
+					"end": "\\}",
+					"patterns": [
+						{
+							"include": "#all"
+						}
+					]
+				},
+				{
+					"name": "string.quoted.double.une",
+					"match": "(.)"
+				}
+			]
 		},
 		"numbers": {
 			"name": "constant.numeric.une",
@@ -92,14 +113,6 @@
 		"variables": {
 			"name": "variable.other.readwrite.une",
 			"match": "\\b([A-Za-z_]\\w*)\\b"
-		},
-		"string_expression": {
-			"name": "constant.character.format.placeholder.other.une",
-			"begin": "\\{",
-			"patterns": [
-				{ "include": "#all" }
-			],
-			"end": "\\}"
 		}
 	},
 	"scopeName": "source.une"
