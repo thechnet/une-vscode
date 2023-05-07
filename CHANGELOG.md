@@ -1,7 +1,8 @@
-### Unreleased
+### 0.12.0 - 2023-05-07
 
 ### Added
 - Support for assignment operations.
+- Support for `..` token.
 
 ### Fixed
 - Parentheses in embedded expressions are colored incorrectly.

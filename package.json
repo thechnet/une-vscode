@@ -1,7 +1,7 @@
 {
   "name": "une",
   "displayName": "Une",
-  "version": "0.11.1",
+  "version": "0.12.0",
   "publisher": "chnet",
   "description": "Language support for the Une Programming Language.",
   "author": {
