@@ -20,7 +20,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.une",
-					"match": "\\b(if|elif|else|while|for|from|till|in|return|exit|break|continue)\\b"
+					"match": "\\b(if|elif|else|assert|while|for|from|till|in|return|exit|break|continue)\\b"
 				},
 				{
 					"name": "storage.modifier",
