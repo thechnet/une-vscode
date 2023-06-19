@@ -28,7 +28,7 @@
 				},
 				{
 					"name": "keyword.other.une",
-					"match": "\\b(function|cover|True|False|Void|this)\\b"
+					"match": "\\b(function|cover|any|all|True|False|Void|this)\\b"
 				},
 				{
 					"name": "keyword.operator.comparison.une",

@@ -1,3 +1,8 @@
+## 0.14.0 - 2023-06-19
+
+### Added
+- Support for `any` and `all` operators.
+
 ## 0.13.0 - 2023-06-18
 
 ### Added
