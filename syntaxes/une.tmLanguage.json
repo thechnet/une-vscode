@@ -72,7 +72,7 @@
 			"patterns": [
 				{
 					"name": "string.quoted.double.une constant.character.escape.une",
-					"match": "\\\\(n|e|a|\\\\|\n|\"|\\{|\\})"
+					"match": "\\\\(n|r|t|e|a|\\\\|\n|\"|\\{|\\}|o[0-7]{2}|x[a-fA-F\\d]{2})"
 				},
 				{
 					"begin": "\\{",
@@ -90,8 +90,24 @@
 			]
 		},
 		"numbers": {
-			"name": "constant.numeric.une",
-			"match": "\\b(?<!\\w)\\d+(?:\\.\\d+)?\\b"
+			"patterns": [
+				{
+					"name": "constant.numeric.dec.une",
+					"match": "\\b(?<!\\w)\\d+(?:\\.\\d+)?(?:[eE]-?\\d+)?\\b"
+				},
+				{
+					"name": "constant.numeric.bin.une",
+					"match": "\\b(?<!\\w)0b[01]+(?:\\.[01]+)?\\b"
+				},
+				{
+					"name": "constant.numeric.oct.une",
+					"match": "\\b(?<!\\w)0o[0-7]+(?:\\.[0-7]+)?\\b"
+				},
+				{
+					"name": "constant.numeric.hex.une",
+					"match": "\\b(?<!\\w)0x[a-fA-F\\d]+(?:\\.[a-fA-F\\d]+)?\\b"
+				}
+			]
 		},
 		"comments": {
 			"name": "comment.line.number-sign.une",

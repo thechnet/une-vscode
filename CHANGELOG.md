@@ -1,3 +1,10 @@
+## 0.15.0 - 2023-07-02
+
+### Added
+- Support for scientific E notation and binary, octal, and hexadecimal numbers.
+- Support for octal and hexadecimal character constants.
+- Support for `\r` and `\t` sequences.
+
 ## 0.14.0 - 2023-06-19
 
 ### Added
